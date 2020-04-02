@@ -1,0 +1,18 @@
+/*
+       the challenge is to print numbers from 1 to n, then in the next line shift it to the right once for n lines
+        for example n=4:
+        1 2 3 4
+        4 1 2 3
+        3 4 1 2
+        2 3 4 1
+        */   
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter a number:");
+        int num = input.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < num; j++) {
+                System.out.print((j+num-i)%num+1+" ");
+            }
+            System.out.println("");
+        }
