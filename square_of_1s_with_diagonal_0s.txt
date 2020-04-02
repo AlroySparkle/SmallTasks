@@ -1,0 +1,19 @@
+/*
+       the challenge is to print 1's as square and diagonal line of zeros with size zeros.
+        for example n=4:
+        0 1 1 1
+        1 0 1 1
+        1 1 0 1
+        1 1 1 0
+        */   
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter a number:");
+        int num = input.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < num; j++) {
+                System.out.print(((j==i)?0:1)+" ");
+            }
+            System.out.println("");
+        }
+     
